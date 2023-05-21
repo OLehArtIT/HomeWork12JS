@@ -61,8 +61,8 @@ let users = [
       }
       
     
-let userName = users.filter(user => user.balance > 2000).map(user => user.name);
-console.log("Пользователи с балансом больше 2000$: ", userName);
+let userPhone = users.filter(user => user.balance > 2000).map(user => user.phone);
+console.log("Пользователи с балансом больше 2000$: ", userPhone);
 
 let generalBalance = users.reduce((total, user) => total + user.balance, 0);
 console.log("Общий баланс всех  пользователей: $",generalBalance);
